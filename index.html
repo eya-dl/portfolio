@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eya Dhambri — Élève ingénieure en IA</title>
+  <meta name="description" content="Eya Dhambri, élève ingénieure en dernière année à l'ENSI. Systèmes RAG, agents LLM, machine learning explicable. Recherche un stage PFE à partir de février 2027.">
+  <meta property="og:title" content="Eya Dhambri — Élève ingénieure en IA">
+  <meta property="og:description" content="RAG, agents LLM, machine learning explicable. Stage PFE à partir de février 2027.">
+  <meta property="og:image" content="assets/img/bct.webp">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%237B4BA6'/><text x='32' y='43' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='white'>ED</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#projets">Aller aux projets</a>
+
+  <header class="top">
+    <a class="brand" href="#">Eya Dhambri</a>
+    <nav aria-label="Navigation principale">
+      <a href="#projets">Projets</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#competences">Compétences</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-small" href="assets/cv/CV_Eya_Dhambri_FR.pdf" download>CV</a>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="status"><span class="dot" aria-hidden="true"></span>Disponible pour un stage PFE de 6 mois à partir de février 2027</p>
+        <h1>Je construis des systèmes d'IA qui montrent d'où viennent leurs réponses.</h1>
+        <p class="lead">Élève ingénieure en dernière année à l'ENSI. Je conçois des assistants RAG et multi-agents, des modèles de machine learning explicables et les pipelines de données qui les alimentent, du notebook jusqu'à l'application.</p>
+        <div class="actions">
+          <a class="btn" href="#projets">Voir les projets</a>
+          <a class="btn btn-ghost" href="assets/cv/CV_Eya_Dhambri_FR.pdf" download>CV en français</a>
+          <a class="btn btn-ghost" href="assets/cv/CV_Eya_Dhambri_EN.pdf" download>CV in English</a>
+        </div>
+      </div>
+
+      <figure class="exchange" aria-label="Exemple de question posée à l'assistant réglementaire BCT">
+        <figcaption>Assistant réglementaire — Banque Centrale de Tunisie</figcaption>
+        <div class="q">Dans quel délai faut-il rétrocéder le reliquat de l'allocation touristique non utilisé après le retour en Tunisie&nbsp;?</div>
+        <div class="a">
+          <p class="typed" data-text="Sept jours ouvrables à compter de la date de retour inscrite sur le passeport, auprès d'un intermédiaire agréé, après déclaration d'importation des devises visée par la Douane.">Sept jours ouvrables à compter de la date de retour inscrite sur le passeport, auprès d'un intermédiaire agréé, après déclaration d'importation des devises visée par la Douane.</p>
+          <ul class="sources" aria-label="Sources citées">
+            <li>Recueil de la réglementation des changes</li>
+            <li>Allocation touristique</li>
+          </ul>
+          <p class="checks"><span>Réponse vérifiée : ancrée dans les sources</span></p>
+        </div>
+      </figure>
+    </section>
+
+    <!-- KEY FACTS -->
+    <section class="facts" aria-label="En bref">
+      <dl>
+        <div><dt>~90 %</dt><dd>de réponses exactes sur 80 questions réglementaires (stage BCT)</dd></div>
+        <div><dt>0,92</dt><dd>PR-AUC en détection de fraude sur 6,3 M de transactions</dd></div>
+        <div><dt>2,07 M</dt><dd>flux réseau notés en streaming par un autoencodeur ONNX</dd></div>
+        <div><dt>3</dt><dd>expériences : Banque Centrale de Tunisie, laboratoire RIADI, Hôpital Charles Nicolle</dd></div>
+      </dl>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projets" class="projects">
+      <div class="section-head">
+        <h2>Projets</h2>
+        <div class="filters" role="group" aria-label="Filtrer les projets par domaine">
+          <button type="button" class="chip" aria-pressed="true" data-filter="all">Tous</button>
+          <button type="button" class="chip" aria-pressed="false" data-filter="genai">IA générative &amp; RAG</button>
+          <button type="button" class="chip" aria-pressed="false" data-filter="ml">Machine learning &amp; XAI</button>
+          <button type="button" class="chip" aria-pressed="false" data-filter="data">Données &amp; streaming</button>
+          <button type="button" class="chip" aria-pressed="false" data-filter="web">Applications web</button>
+        </div>
+      </div>
+
+      <article class="feature" data-tags="genai">
+        <a class="shot" href="assets/img/bct.webp"><img src="assets/img/bct.webp" alt="Architecture en couches de l'assistant RAG BCT : interface Streamlit, graphe d'agents LangGraph, retrieval hybride, ChromaDB" width="1400" height="1145"></a>
+        <div class="body">
+          <p class="context">Stage · Banque Centrale de Tunisie · juin – juillet 2026</p>
+          <h3>Assistant réglementaire RAG multi-agents</h3>
+          <p>Un assistant qui répond aux questions sur la réglementation des changes à partir d'une soixantaine de lois, décrets, circulaires et avis (1975 – 2024), en citant les articles exacts. Les questions composées sont découpées en sous-questions, chaque réponse passe un contrôle anti-hallucination avant d'être affichée.</p>
+          <ul class="points">
+            <li>Recherche hybride BM25 + BGE-M3, fusion RRF, reranking par cross-encoder</li>
+            <li>Découpage hiérarchique Partie › Titre › Chapitre › Article : 2 088 fragments avec métadonnées</li>
+            <li>Agent de références croisées qui va chercher les textes cités par un article</li>
+            <li>Environ 90 % de réponses exactes sur un banc de 80 questions</li>
+          </ul>
+          <p class="stack">LangGraph · LangChain · ChromaDB · BGE-M3 · Docling · Streamlit</p>
+          <p class="links"><a href="https://github.com/eya-dl/bct_reglementation">Code sur GitHub</a></p>
+        </div>
+      </article>
+
+      <article class="feature reverse" data-tags="ml">
+        <a class="shot" href="assets/img/graftai.webp"><img loading="lazy" src="assets/img/graftai.webp" alt="Application GraftAI : jauge de risque de rejet et contributions SHAP des facteurs" width="1400" height="875"></a>
+        <div class="body">
+          <p class="context">Laboratoire RIADI &amp; Hôpital Charles Nicolle · janvier – mai 2026</p>
+          <h3>GraftAI — IA explicable pour la transplantation rénale</h3>
+          <p>Aide à la décision pour les néphrologues : le modèle estime le risque de rejet d'un greffon et l'application montre quels facteurs pèsent sur la prédiction et quels changements la feraient baisser.</p>
+          <ul class="points">
+            <li>Préparation et analyse exploratoire de données cliniques, modèle XGBoost</li>
+            <li>Explications SHAP et LIME par patient, scénarios contrefactuels avec DiCE</li>
+            <li>Rapport HTML exportable et chatbot médical RAG (FAISS, Llama 3.3)</li>
+          </ul>
+          <p class="stack">XGBoost · SHAP · LIME · DiCE · FastAPI · Streamlit</p>
+          <p class="links"><a href="https://github.com/eya-dl/NephroTech-GraftAI">Code sur GitHub</a></p>
+        </div>
+      </article>
+
+      <article class="feature" data-tags="ml data">
+        <div class="shot shot-metrics" aria-hidden="true">
+          <div class="bar" style="--v:.917"><span>XGBoost</span><b>0,917</b></div>
+          <div class="bar" style="--v:.870"><span>Random Forest</span><b>0,870</b></div>
+          <div class="bar" style="--v:.690"><span>Régression logistique</span><b>0,690</b></div>
+          <p>PR-AUC sur une période future (découpage temporel)</p>
+        </div>
+        <div class="body">
+          <p class="context">Projet personnel · octobre 2026</p>
+          <h3>Détection de fraude sur paiements mobiles</h3>
+          <p>Détecter 0,13 % de fraudes parmi 6,3 millions de transactions. Trois modèles, trois stratégies de déséquilibre, un seuil réglé sur validation et une lecture métier : si les analystes ne regardent que 0,5 % des transactions, le modèle retrouve 91 % des fraudes.</p>
+          <ul class="points">
+            <li>Découpage temporel pour évaluer comme en production</li>
+            <li>Pondération des classes, SMOTENC, Isolation Forest, LOF, One-Class SVM</li>
+            <li>Toutes les expériences suivies dans MLflow et lues par un tableau de bord Streamlit</li>
+          </ul>
+          <p class="stack">scikit-learn · XGBoost · imbalanced-learn · MLflow · Streamlit</p>
+          <p class="links"><a href="https://github.com/eya-dl/fraud_detection">Code sur GitHub</a></p>
+        </div>
+      </article>
+
+      <h3 class="more-title">Autres projets</h3>
+      <div class="more">
+        <article class="card" data-tags="data">
+          <img loading="lazy" src="assets/img/flowguard.webp" alt="Courbes ROC de l'autoencodeur FlowGuard et des modèles de référence" width="975" height="750">
+          <h4>FlowGuard <span class="tag">projet d'équipe</span></h4>
+          <p>Détection d'intrusions réseau en temps réel. J'ai construit le producteur Kafka et le job Spark Structured Streaming qui note chaque flux avec un autoencodeur ONNX (ROC-AUC 0,92) et écrit les alertes dans Cassandra.</p>
+          <p class="stack">Kafka · Spark · ONNX · Cassandra · Grafana · Docker</p>
+          <a href="https://github.com/eya-dl/FlowGuard">GitHub</a>
+        </article>
+        <article class="card" data-tags="ml web">
+          <img loading="lazy" src="assets/img/telchurn.webp" alt="Tableau de bord Telco Churn : métriques et matrice de confusion" width="1400" height="875">
+          <h4>Telco Churn</h4>
+          <p>API de prédiction du churn et tableau de bord de 7 pages : performance, choix du seuil selon le coût métier, explications SHAP et LIME, comparaison des modèles.</p>
+          <p class="stack">FastAPI · Streamlit · XGBoost · SHAP · Docker</p>
+          <a href="https://github.com/eya-dl/Tel_Churn">GitHub</a>
+        </article>
+        <article class="card" data-tags="genai">
+          <h4>DevDoc AI <span class="tag">projet d'équipe</span></h4>
+          <p>Copilote GraphRAG multi-agents pour concevoir des architectures agentiques à partir de la documentation officielle des frameworks. Je suis responsable du graphe de connaissances Neo4j et de la recherche dans le graphe.</p>
+          <p class="stack">LangGraph · Neo4j · FAISS · FastAPI · React</p>
+          <a href="https://github.com/eya-dl/DevDoc-AI">GitHub</a>
+        </article>
+        <article class="card" data-tags="ml web">
+          <h4>Itinera</h4>
+          <p>Recommandation de lieux et planification d'itinéraires selon les intérêts, le budget et la durée, avec une explication pour chaque suggestion.</p>
+          <p class="stack">Angular · Spring Boot · FastAPI · pandas · Docker</p>
+          <a href="https://github.com/eya-dl/Itinera_project">GitHub</a>
+        </article>
+        <article class="card" data-tags="ml web">
+          <h4>PepperLeaf AI</h4>
+          <p>Diagnostic des maladies des feuilles de poivron à partir d'une photo : CNN servi par TensorFlow Serving, API FastAPI, interface React, images Docker publiées par GitHub Actions.</p>
+          <p class="stack">TensorFlow · FastAPI · React · Docker · GitHub Actions</p>
+          <a href="https://github.com/eya-dl/pepperleaf-ai">GitHub</a>
+        </article>
+        <article class="card" data-tags="ml">
+          <h4>BankPulse</h4>
+          <p>Segmentation de la clientèle bancaire (K-Means, CAH, DBSCAN après ACP), profilage des segments et application web pour les explorer.</p>
+          <p class="stack">scikit-learn · Angular · Spring Boot</p>
+        </article>
+        <article class="card" data-tags="web data">
+          <h4>DataShield</h4>
+          <p>Stage RIADI, été 2025. Anonymisation de jeux de données (9 techniques) et contrôle d'accès par profil avec des politiques XACML.</p>
+          <p class="stack">Flask · React · PostgreSQL · MongoDB</p>
+          <a href="https://github.com/eya-dl/data-anonymization-app">GitHub</a>
+        </article>
+        <article class="card" data-tags="data">
+          <h4>Business Intelligence &amp; ETL</h4>
+          <p>Pipelines décisionnels : extraction, transformation et chargement multi-sources avec SSIS et SQL Server, puis tableaux de bord Power BI pour suivre les indicateurs clés.</p>
+          <p class="stack">SQL Server · SSIS · Power BI · DAX</p>
+        </article>
+      </div>
+      <p class="empty" hidden>Aucun projet dans ce domaine.</p>
+    </section>
+
+    <!-- PATH -->
+    <section id="parcours" class="path">
+      <h2>Parcours</h2>
+      <div class="cols">
+        <div>
+          <h3>Expériences</h3>
+          <ol class="timeline">
+            <li><time>juin – juillet 2026</time><strong>Stage — Banque Centrale de Tunisie</strong><span>Assistant réglementaire RAG et multi-agents sur la réglementation des changes.</span></li>
+            <li><time>janvier – mai 2026</time><strong>Laboratoire RIADI &amp; Hôpital Charles Nicolle</strong><span>GraftAI : modèle de risque et IA explicable pour la transplantation rénale, en équipe Agile.</span></li>
+            <li><time>juillet – août 2025</time><strong>Stage — Laboratoire RIADI</strong><span>Application web d'anonymisation de données avec tableau de bord administrateur.</span></li>
+          </ol>
+        </div>
+        <div>
+          <h3>Formation</h3>
+          <ol class="timeline">
+            <li><time>en cours</time><strong>Cycle d'ingénieur en sciences de l'informatique — ENSI</strong><span>École Nationale des Sciences de l'Informatique, dernière année.</span></li>
+            <li><time>2023 – 2024</time><strong>Cycle préparatoire — IPEIT</strong><span>Diplôme obtenu, rang 200 au concours national.</span></li>
+            <li><time>2021 – 2022</time><strong>Baccalauréat mathématiques, mention Bien</strong><span>Lycée Farabi, Mornaguia.</span></li>
+          </ol>
+          <h3 class="lang-title">Langues</h3>
+          <p class="langs">Arabe (langue maternelle), français et anglais courants.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="competences" class="skills">
+      <h2>Compétences</h2>
+      <dl>
+        <div><dt>IA générative</dt><dd>LLM, RAG, recherche hybride (BM25, embeddings, reranking), GraphRAG, multi-agents, LangChain, LangGraph, évaluation et détection d'hallucinations</dd></div>
+        <div><dt>Machine learning</dt><dd>scikit-learn, XGBoost, TensorFlow/Keras, détection d'anomalies, déséquilibre de classes, SHAP, LIME, DiCE, MLflow</dd></div>
+        <div><dt>Données</dt><dd>Python, pandas, SQL, ETL (SSIS), Power BI, Kafka, Spark Structured Streaming, extraction de documents (Docling, OCR)</dd></div>
+        <div><dt>Bases de données</dt><dd>PostgreSQL, SQL Server, MongoDB, Cassandra, ChromaDB, FAISS, Neo4j</dd></div>
+        <div><dt>Développement</dt><dd>FastAPI, Flask, APIs REST, React, Angular, Spring Boot, Streamlit</dd></div>
+        <div><dt>Outils</dt><dd>Docker, Docker Compose, Git, GitHub Actions</dd></div>
+        <div><dt>Modélisation</dt><dd>Réseaux de Petri : accessibilité, blocage, parallélisme, vérification de propriétés</dd></div>
+      </dl>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <h2>Parlons de votre sujet de PFE</h2>
+      <p>Je cherche un stage de fin d'études de 6 mois à partir de février 2027 en ingénierie IA, LLM/RAG ou data science.</p>
+      <ul class="contact-links">
+        <li><a href="mailto:eya.dhambri@ensi-uma.tn">eya.dhambri@ensi-uma.tn</a></li>
+        <li><a href="https://www.linkedin.com/in/eya-dhambri">LinkedIn</a></li>
+        <li><a href="https://github.com/eya-dl">GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Eya Dhambri, Manouba (Tunisie)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
